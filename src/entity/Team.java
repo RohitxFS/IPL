@@ -14,6 +14,24 @@ public class Team {
 	 
 	 private boolean isQualified;
 	 
+	 private String shortName;
+	 
+	 public String getShortName() {
+		 return shortName;
+	 }
+	 public void setShortName(String shortName) {
+		 this.shortName = shortName;
+	 }
+	 
+	 //toString() -> converts objects toString
+	 //right click -> source -> generate toString()
+	 
+	 @Override
+		public String toString() {
+			return " Team id=" + id +"\n"+ " teamName=" + teamName +"\n"+ " captainName=" + captainName +"\n"+ " coachName=" + coachName
+					+"\n" + " nRR=" + nRR +"\n" + " isQualified=" + isQualified +"\n" + " shortName=" + shortName + "\n";
+		}
+
 	 // setter-getter
 	 public int getId() {
 		 return id;
